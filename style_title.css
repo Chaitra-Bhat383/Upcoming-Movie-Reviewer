@@ -20,6 +20,11 @@ header {
     border-color: #25DA4F;
     
 }
+.rightHand a:hover{
+color:black;
+background-color:#25DA4F ;
+width:1170px;
+}
 .brder{
     color:#25DA4F;
     height: 2px;
@@ -57,6 +62,7 @@ nav a {
 	-webkit-background-size: cover;
 	background-size: 50%;
 	background-position: center center;
+    
 }
 .banner-area h2 {
 	padding-top: 8%;
@@ -68,12 +74,13 @@ nav a {
     margin-top:-5%;
 }
 .banner-area h2 {
-	/*padding-top: 8%;*/
-	font-size: 70px;
+    padding-top: 8%;
+	font-size: 60px;
 	font-family: poppins;
 	text-transform: uppercase;
-	color:white;
+	color: white;
     background:black;
+    margin-top:-5%;
 }
 .btnrev {
 background-color: white;
@@ -211,28 +218,5 @@ margin:10px;
     .Container h1{
         color: white;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    [data-title]:hover:after {
-      opacity: 1;
-      transition: all 0.1s ease 0.5s;
-      visibility: visible;
-    }
-    [data-title]:after {
-      content: attr(data-title);
-      background-color: #00FF00;
-      color: #111;
-      font-size: 50%;
-      position: absolute;
-      padding: 1px 5px 2px 5px;
-      bottom: -1 em;
-      white-space: nowrap;
-      box-shadow: 1px 1px 3px #222222;
-      opacity: 0;
-      border: 1px solid #111111;
-      z-index: 99999;
-      visibility: hidden;
-    }
-    [data-title] {
-      position: relative;
     }
         
