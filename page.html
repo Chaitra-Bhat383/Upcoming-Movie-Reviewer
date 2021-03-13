@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HOME PAGE</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link href="style_title.css" rel="stylesheet">
+</head>
+<body>
+	<div class="box-area">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<a href="#">THE MOVIE REVIEWER</a>
+				</div>
+				<nav>
+					<a data-title = "Movie Reviewer" href="#">about</a> <a data-title = "Upcoming movies" href="#">trivia</a> <a data-title = "look into our website" href="#">rating</a><a data-title = "abc@gmail.com" href="#">contact</a>
+				</nav>
+			</div>
+		</header>
+        <div class="brder"></div>
+		
+        <div class="content-area">
+			   
+<!--image slider start-->
+<div class="slider">
+    <div class="slides">
+      <!--radio buttons start-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <!--radio buttons end-->
+      <!--slide images start-->
+      <div class="slide first">
+        <img src="poster1.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="poster2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="poster3.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="poster4.jpg" alt="">
+      </div>
+      <!--slide images end-->
+      <!--automatic navigation start-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+      <!--automatic navigation end-->
+    </div>
+    <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!--manual navigation end-->
+  </div>
+  <!--image slider end-->
+            </div>
+        </div>
+  <script type="text/javascript">
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+      counter = 1;
+    }
+  }, 5000);
+  </script>
+  <div class="Container">
+    <h1>SCROLL TO DISCOVER A WHOLE NEW WORLD</h1>
+</div>
+
+  <div class="banner-area">
+    <h2>CHECK OUT THE RATING</h2>
+    <button class="btnrev"><A href="abc.html">Here!</A></button>
+</div>
+
+</body>
+</html>
+    
