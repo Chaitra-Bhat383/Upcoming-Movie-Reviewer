@@ -1,0 +1,238 @@
+* {
+	margin: 0;
+	padding: 0;
+  
+}
+body {
+	text-align: center;
+}
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+header {
+	height: 100px;
+	background:rgb(1, 20, 8);
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+    color:black;
+    border-color: #25DA4F;
+    
+}
+.brder{
+    color:#25DA4F;
+    height: 2px;
+}
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 20px;
+	font-family: poppins;
+	color: #25DA4F;
+	letter-spacing: 5px;
+}
+nav {
+	float: right;
+	line-height: 100px;
+}
+nav a {
+	text-decoration: none;
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 20px;
+	margin: 0 10px;
+	color: #25DA4F;
+}
+.banner-area {
+	width: 100%;
+	height: 500px;
+	
+	top: 100px;
+	background-image: url(https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80);
+	-webkit-background-size: cover;
+	background-size: 50%;
+	background-position: center center;
+}
+.banner-area h2 {
+	padding-top: 8%;
+	font-size: 60px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: white;
+    background:black;
+    margin-top:-5%;
+}
+.banner-area h2 {
+	/*padding-top: 8%;*/
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color:white;
+    background:black;
+}
+.btnrev {
+background-color: white;
+color:black;
+size: 15em;
+padding:10px 20px;
+font-size: 20px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+margin:10px;
+}
+.btnrev:hover{
+    background-color: #25DA4F;
+    
+}
+.content-area {
+    margin-top: -50%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+   
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #25DA4F;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #25DA4F;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #25DA4F;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #25DA4F;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #25DA4F;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #25DA4F;}
+    .Container{
+        margin-top: -8%;
+    }
+    .Container h1{
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    [data-title]:hover:after {
+      opacity: 1;
+      transition: all 0.1s ease 0.5s;
+      visibility: visible;
+    }
+    [data-title]:after {
+      content: attr(data-title);
+      background-color: #00FF00;
+      color: #111;
+      font-size: 50%;
+      position: absolute;
+      padding: 1px 5px 2px 5px;
+      bottom: -1 em;
+      white-space: nowrap;
+      box-shadow: 1px 1px 3px #222222;
+      opacity: 0;
+      border: 1px solid #111111;
+      z-index: 99999;
+      visibility: hidden;
+    }
+    [data-title] {
+      position: relative;
+    }
+        
