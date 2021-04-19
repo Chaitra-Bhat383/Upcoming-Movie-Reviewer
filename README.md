@@ -9,8 +9,11 @@ It is the combination of some 4-5 webpages which contains a beautiful sliding ho
 
 # Team Members:
 Chaitra Bhat : https://github.com/Chaitra-Bhat383
+
 Mathangi Krishnamurthy : https://github.com/mxthxngx
+
 Sanjitha Kashyap : https://github.com/sanjitha2001
+
 
 # Video Link:
 https://www.youtube.com/watch?v=oQ0sBdxTzew
